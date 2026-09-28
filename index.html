@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Real-time Weather Dashboard using JavaScript REST API">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="weather-card">
+
+            <h1>Weather Dashboard</h1>
+
+            <p class="subtitle">
+                Check real-time weather information
+            </p>
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name"
+                    aria-label="Enter city name"
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+            <!-- Error Message -->
+            <p id="errorMessage" class="error"></p>
+
+            <!-- Loading Message -->
+            <p id="loadingMessage" class="loading"></p>
+
+            <!-- Weather Information -->
+            <section id="weatherResult" class="weather-result">
+
+                <h2 id="cityName">Search for a city</h2>
+
+                <div class="weather-info">
+
+                    <div class="weather-item">
+                        <span>🌡️</span>
+                        <p>Temperature</p>
+                        <strong id="temperature">--</strong>
+                    </div>
+
+                    <div class="weather-item">
+                        <span>💧</span>
+                        <p>Humidity</p>
+                        <strong id="humidity">--</strong>
+                    </div>
+
+                    <div class="weather-item">
+                        <span>💨</span>
+                        <p>Wind Speed</p>
+                        <strong id="windSpeed">--</strong>
+                    </div>
+
+                    <div class="weather-item">
+                        <span>☁️</span>
+                        <p>Weather</p>
+                        <strong id="weatherDescription">--</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
